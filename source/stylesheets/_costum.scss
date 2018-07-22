@@ -3,11 +3,17 @@
 	margin:0 auto;
 }
 nav {
-	background: #b5b2aa;
+  border-bottom: 1px solid $base-border-color;
+  background: #b5b2aa;
 	height: auto;
 	width: 100%;
-	padding: 20px;    
+	padding: 20px;  
+
+  ul {
+    display: inline-block;
+  }
 }
+
 .full-header {
 	position: relative;
 	text-align: center;
