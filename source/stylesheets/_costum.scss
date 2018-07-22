@@ -2,3 +2,39 @@
 	max-width: 1200px;
 	margin:0 auto;
 }
+nav {
+	background: #b5b2aa;
+    height: auto;
+    width: 100%;
+    padding: 20px;    
+}
+.full-header {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    min-height: 650px;
+    height: 100%;
+}
+.header-center {
+    height: auto;
+    position: relative;
+    text-align: center;
+    display: inline-block;
+    margin-top: 0;
+    max-width: 100%;
+    width: 1175px;
+    z-index: 2;
+}
+.header-center .header-center-inner {
+    max-width: 700px;
+    text-align: center;
+    margin: 0 auto;
+}
+.header-center .header-center-inner h1, .header-center .header-center-inner h2 {
+    font-size: 55px;
+    font-family: Merriweather,serif;
+    font-weight: 400;
+    color: #4a4a4a;
+    text-align: center;
+    text-transform: capitalize;
+}
