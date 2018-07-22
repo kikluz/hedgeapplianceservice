@@ -1,7 +1,12 @@
-.container {
-	max-width: 1200px;
-	margin:0 auto;
+// basic
+p {
+	padding: 35px 0;
+	position: relative;
+	text-align: left;
+	font-size: 16px;
+	margin-bottom: 0;
 }
+
 nav {
   border-bottom: 1px solid $base-border-color;
   background: #b5b2aa;
@@ -14,11 +19,16 @@ nav {
   }
 }
 
+.container {
+	max-width: 1200px;
+	margin:0 auto;
+}
+
+
 .full-header {
 	position: relative;
 	text-align: center;
 	width: 100%;
-	min-height: 650px;
 	height: 100%;
 	h1 {
 		padding: 1em;
@@ -29,21 +39,6 @@ nav {
 		text-align: center;
 		text-transform: capitalize;
 	}
-}
-.header-center {
-	height: auto;
-	position: relative;
-	text-align: center;
-	display: inline-block;
-	margin-top: 0;
-	max-width: 100%;
-	width: 1175px;
-	z-index: 2;
-}
-.header-center-inner {
-	max-width: 700px;
-	text-align: center;
-	margin: 0 auto;
 	h3 {
 		font-size: 20px;
 		line-height: 30px;
@@ -55,4 +50,22 @@ nav {
 		margin: 20px auto 0;
 		max-width: 500px;
 	}
+	.header-center {
+		height: auto;
+		position: relative;
+		text-align: center;
+		display: inline-block;
+		margin-top: 0;
+		max-width: 100%;
+		width: 1175px;
+		z-index: 2;
+	}
+	.header-center-inner {
+		max-width: 700px;
+		text-align: center;
+		margin: 0 auto;
+
+	}
 }
+
+
