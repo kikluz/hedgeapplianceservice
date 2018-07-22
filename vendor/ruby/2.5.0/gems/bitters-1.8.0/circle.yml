@@ -1,0 +1,10 @@
+general:
+  branches:
+    ignore:
+      - gh-pages
+dependencies:
+  override:
+    - bundle install
+test:
+  override:
+    - bundle exec rake

@@ -1,0 +1,15 @@
+current directory: /home/kikluz/development/personal/middleman/hedgeapplianceservice/vendor/gems/fast_blank-1.0.0/ext/fast_blank
+/home/kikluz/.rbenv/versions/2.5.1/bin/ruby -r ./siteconf20180722-3232-1vwc2qg.rb extconf.rb
+creating Makefile
+
+current directory: /home/kikluz/development/personal/middleman/hedgeapplianceservice/vendor/gems/fast_blank-1.0.0/ext/fast_blank
+make "DESTDIR=" clean
+
+current directory: /home/kikluz/development/personal/middleman/hedgeapplianceservice/vendor/gems/fast_blank-1.0.0/ext/fast_blank
+make "DESTDIR="
+compiling fast_blank.c
+linking shared-object fast_blank.so
+
+current directory: /home/kikluz/development/personal/middleman/hedgeapplianceservice/vendor/gems/fast_blank-1.0.0/ext/fast_blank
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 fast_blank.so ./.gem.20180722-3232-cacmv6
