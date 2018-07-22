@@ -1,12 +1,25 @@
 # Activate and configure extensions
 # https://middlemanapp.com/advanced/configuration/#configuring-extensions
+activate :livereload
+activate :sprockets
 
 activate :autoprefixer do |prefix|
   prefix.browsers = "last 2 versions"
 end
+# extensions
+# require 'lib/extensions/permalink.rb'
+# activate :permalink
+activate :syntax
+set :markdown_engine, :kramdown
 
+import_path File.expand_path('bower_components', app.root)
 # Layouts
 # https://middlemanapp.com/basics/layouts/
+# github project pages deploy
+activate :deploy do |deploy|
+  deploy.deploy_method = :git
+  deploy.build_before = true # default: false
+end
 
 # Per-page layout changes
 page '/*.xml', layout: false
