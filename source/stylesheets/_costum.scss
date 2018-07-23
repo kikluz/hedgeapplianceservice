@@ -1,6 +1,11 @@
-// basic 
+//-----------------------------------------------------
+// Genaral typo
+//-----------------------------------------------------
 a,ul, li {
 	text-decoration: none;
+}
+h1,h2,h3,h4,h5 {
+	font-family: Merriweather,serif;
 }
 p {
 	padding: 35px 0;
@@ -58,7 +63,7 @@ nav {
 	h1 {
 		padding: 1em;
 		font-size: 55px;
-		font-family: Merriweather,serif;
+		// font-family: Merriweather,serif;
 		font-weight: 400;
 		color: #4a4a4a;
 		text-align: center;
@@ -173,9 +178,11 @@ nav {
 	
 }
 span {
+	@include for-desktop-up {
+		font-size: 1.5em;		
+	}
 	margin:0;
 	text-align: right;
-	font-size: 1.5em;
 	font-style: italic;
 }
 
