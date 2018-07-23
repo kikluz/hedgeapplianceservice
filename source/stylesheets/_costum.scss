@@ -16,8 +16,11 @@ nav {
 	height: auto;
 	width: 100%;
 	padding: 20px;  
+	.nav-items {
+		float: right;
+	}
 
-	ul {
+	ul li {
 		display: inline-block;
 	}
 	.nav a {
@@ -45,11 +48,13 @@ nav {
 
 
 .full-header {
+	@include for-desktop-up {
+		padding: 100px;
+	}
 	position: relative;
 	text-align: center;
 	width: 100%;
 	height: 100%;
-	padding: 100px;
 	h1 {
 		padding: 1em;
 		font-size: 55px;
@@ -133,8 +138,10 @@ nav {
 }
 
 // blockquotes
-.quotation{
+.quotation {
+	@include for-desktop-up {
 	font-size: 30px;
+}
 	//margin: 0 auto;
 	quotes: "\201C""\201D""\2018""\2019";
 	padding: 10px 20px;
@@ -154,7 +161,6 @@ nav {
 
 }
 .quotation::after {
-	@include for-desktop-up {
 	content: close-quote;
 	display: inline;
 	height: 0;
@@ -164,7 +170,7 @@ nav {
 	top: 35px;
 	color: #ccc;
 	font-size: 3em;
-	}
+	
 }
 span {
 	margin:0;
