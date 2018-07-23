@@ -11,29 +11,36 @@ p {
 }
 
 nav {
-  border-bottom: 1px solid $base-border-color;
-  background: #b5b2aa;
+	border-bottom: 1px solid $base-border-color;
+	background: lightskyblue;
 	height: auto;
 	width: 100%;
 	padding: 20px;  
 
-  ul {
-    display: inline-block;
-  }
+	ul {
+		display: inline-block;
+	}
+	.nav a {
+		text-decoration: none;
+		display: block;
+		padding: 0 1em;
+		color: white;
+	}
+	.cta {
+		float: right;
+	}
+	span {color: white;}
 }
 
+
+
+
 .container {
+	@include for-desktop-up {
+		padding: 20px;
+	}
 	max-width: 1200px;
 	margin:0 auto;
-}
-
-
-.container {
-  
-  
-  @include for-desktop-up {
-    padding: 20px;
-  }
 }
 
 
@@ -42,6 +49,7 @@ nav {
 	text-align: center;
 	width: 100%;
 	height: 100%;
+	padding: 100px;
 	h1 {
 		padding: 1em;
 		font-size: 55px;
@@ -100,7 +108,7 @@ nav {
 		/* Text styles */
 		font-family: Merriweather,serif;
 		font-weight: 400;
-		 color: white; /* ADD THIS LINE */
+		color: white; /* ADD THIS LINE */
 		font-size: 2em;
 		/* Margins */
 		margin-top: 0;
@@ -110,18 +118,59 @@ nav {
 	h2 {color: white;}
 
 	/* Background styles */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(../images/fresh.jpg);
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    width: 100%;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(../images/fresh.jpg);
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	width: 100%;
 }
 
 .hero .btn {
-    /* Positioning and sizing */
-    display: block;
-    width: 200px;
+	/* Positioning and sizing */
+	display: block;
+	width: 200px;
+}
+
+// blockquotes
+.quotation{
+	font-size: 30px;
+	//margin: 0 auto;
+	quotes: "\201C""\201D""\2018""\2019";
+	padding: 10px 20px;
+	line-height: 1.4;
+}
+
+.quotation:before {
+	content: open-quote;
+	display: inline;
+	height: 0;
+	line-height: 0;
+	left: -10px;
+	position: relative;
+	top: 30px;
+	color: #ccc;
+	font-size: 3em;
+
+}
+.quotation::after {
+	@include for-desktop-up {
+	content: close-quote;
+	display: inline;
+	height: 0;
+	line-height: 0;
+	left: 10px;
+	position: relative;
+	top: 35px;
+	color: #ccc;
+	font-size: 3em;
+	}
+}
+span {
+	margin:0;
+	text-align: right;
+	font-size: 1.5em;
+	font-style: italic;
 }
 
 
