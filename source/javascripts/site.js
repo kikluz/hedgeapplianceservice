@@ -1,6 +1,6 @@
 // This is where it all goes :)
-$(document).ready(() => {
-  $('.menu').click(()=>{
-    $('ul').toggleClass('active')
-  })
-})
+// $(document).ready(() => {
+//   $('.menu').click(()=>{
+//     $('ul').toggleClass('active')
+//   })
+// })
