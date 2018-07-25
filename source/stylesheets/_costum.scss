@@ -4,7 +4,7 @@
 a,ul, li {
 	text-decoration: none;
 }
-h1,h2,h3,h4,h5 {
+h1,h2,h3,h4,h5, p, a {
 	font-family: Merriweather,serif;
 }
 p {
@@ -15,30 +15,6 @@ p {
 	margin-bottom: 0;
 }
 
-// nav {
-// 	border-bottom: 1px solid $base-border-color;
-// 	background: lightskyblue;
-// 	height: auto;
-// 	width: 100%;
-// 	padding: 20px;  
-// 	.nav-items {
-// 		float: right;
-// 	}
-
-// 	ul li {
-// 		display: inline-block;
-// 	}
-// 	.nav a {
-// 		text-decoration: none;
-// 		display: block;
-// 		padding: 0 1em;
-// 		color: white;
-// 	}
-// 	.cta {
-// 		float: right;
-// 	}
-// 	span {color: white;}
-// }
 
 nav {
   width: 100%;
