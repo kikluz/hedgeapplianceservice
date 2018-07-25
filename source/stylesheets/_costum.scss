@@ -4,7 +4,7 @@
 a,ul, li {
 	text-decoration: none;
 }
-h1,h2,h3,h4,h5, p, a {
+h1,h2,h3,h4,h5, {
 	font-family: Merriweather,serif;
 }
 p {
@@ -163,7 +163,7 @@ ul li a {
 	h2 {color: white;}
 
 	/* Background styles */
-	background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(../images/applaince.jpg);
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(../images/fresh.jpg);
 	background-size: cover;
 	background-position: center center;
 	background-repeat: no-repeat;
