@@ -6,13 +6,15 @@ activate :sprockets
 activate :autoprefixer do |prefix|
   prefix.browsers = "last 2 versions"
 end
+
+import_path File.expand_path('bower_components', app.root)
 # extensions
 # require 'lib/extensions/permalink.rb'
 # activate :permalink
 activate :syntax
 set :markdown_engine, :kramdown
 
-import_path File.expand_path('bower_components', app.root)
+
 # Layouts
 # https://middlemanapp.com/basics/layouts/
 # github project pages deploy
