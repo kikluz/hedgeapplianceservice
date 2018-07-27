@@ -16,11 +16,7 @@ h1,h2,h3,h4,h5, {
 	font-family: Merriweather,serif;
 }
 p {
-	padding: 35px 0;
-	position: relative;
-	text-align: left;
-	font-size: 16px;
-	margin-bottom: 0;
+	font-family: medium-content-serif-font,Georgia,Cambria,"Times New Roman",Times,serif;
 }
 //-----------------------------------------------------
 // Navigation
@@ -238,28 +234,33 @@ span {
 //-----------------------------------------------------
 .wrapper {
 	@include for-desktop-up {
-	padding: 50px;
+		padding: 50px;
 	}
 	aside {
-	@include for-desktop-up {
-		width: 33.33%;
+		@include for-desktop-up {
+			width: 33.33%;
+		}
+		img {max-width: 300px;}
+
+		float: left;
+
+		padding: 10px;
+		height: 300px;
 	}
-	img {max-width: 300px;}
-	
-    float: left;
-    
-    padding: 10px;
-    height: 300px;
-}
-article {
-	@include for-desktop-up {
-		width: 33.33%;
+	article {
+		float: left;
+		@include for-desktop-up {
+			width: 33.33%;
+		}
+		p {
+			letter-spacing: .01rem;
+			font-weight: 400;
+			font-style: normal;
+			font-size: 21px;
+			line-height: 1.58;
+			letter-spacing: -.003em;
+		}
 	}
-	
-    float: left;
-    padding: 10px;
-    height: 300px;
-}
 }
 
 // section info
