@@ -3,6 +3,7 @@
 //-----------------------------------------------------
 html {
   box-sizing: border-box;
+  height: 100%;
 }
 
 *, *::after, *::before {
@@ -269,7 +270,7 @@ span {
 	article {
 		float: left;
 		@include for-desktop-up {
-			width: 40.33%;
+			width: 50.33%;
 			margin-left: 4em;
 		}
 		p {
