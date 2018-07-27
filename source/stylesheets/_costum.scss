@@ -251,7 +251,8 @@ span {
 	article {
 		float: left;
 		@include for-desktop-up {
-			width: 33.33%;
+			width: 40.33%;
+			margin-left: 4em;
 		}
 		p {
 			letter-spacing: .01rem;
