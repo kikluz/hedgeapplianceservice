@@ -247,11 +247,16 @@ span {
 //  About page 
 //-----------------------------------------------------
 .info_page {
+	max-width: 800px;
+	margin: auto;
 	h2 {
 	    text-align: center;
 	    padding-top: 10px;
 	}
-    
+   p {
+		font-size: 1.3em;
+		line-height: 1.5em;
+	} 
 }
 //-----------------------------------------------------
 //  Two panels
@@ -272,14 +277,14 @@ span {
 
 /* Clear floats after the columns */
 .row:after {
-    content: "";
-    display: table;
-    clear: both;
+	content: "";
+	display: table;
+	clear: both;
 }
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 800px) {
-    .column {
-        width: 100%;
-    }
+	.column {
+		width: 100%;
+	}
 }
