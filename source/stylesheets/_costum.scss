@@ -83,50 +83,6 @@ p {
 
 	}
 }
-//-----------------------------------------------------
-// hero unit exmaple https://codetheweb.blog/2017/12/07/fullscreen-image-hero/
-//-----------------------------------------------------
-// .hero {
-// 	/* Sizing */
-// 	width: 100vw;
-// 	height: 100vh;
-
-// 	/* Flexbox stuff */
-// 	display: flex;
-// 	justify-content: center;
-// 	align-items: center;
-// 	/* Text styles */
-// 	text-align: center;
-// 	h1 {
-// 		@include for-desktop-up {
-// 			font-size: 5em;
-// 		}
-// 		/* Text styles */
-// 		font-family: Merriweather,serif;
-// 		font-weight: 400;
-// 		color: white; /* ADD THIS LINE */
-// 		font-size: 2em;
-// 		/* Margins */
-// 		margin-top: 0;
-// 		margin-bottom: 0.5em;
-// 	}
-// 	a {color: white;}
-// 	h2 {color: white;}
-// 	/* Background styles */
-// 	// background: url('../images/tools.jpg') 50% no-repeat;
-//     background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(../images/fresh.jpg);
-// 	background-size: cover;
-// 	background-position: center center;
-// 	background-repeat: no-repeat;
-// 	background-attachment: fixed;
-// 	width: 100%;
-// }
-
-.hero .btn {
-	/* Positioning and sizing */
-	display: block;
-	width: 200px;
-}
 
 // blockquotes
 .quotation {
@@ -170,19 +126,23 @@ span {
 	margin:0;
 	text-align: right;
 	font-style: italic;
-}/////////////////////////////////////////////////////
-	
+}
+//-----------------------------------------------------
+// hero unit https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_hero_image
+//-----------------------------------------------------	
 .hero-image {
-  // background: url('../images/tools.jpg') 50% no-repeat;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(../images/fresh.jpg);
-  height: 600px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
+	// background: url('../images/tools.jpg') 50% no-repeat;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(../images/fresh.jpg);
+	height: 600px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
 }
 
 .hero-text {
+	a {color: white;}
+	h2 {color: white;}
 	h1 {
 		@include for-desktop-up {
 			font-size: 5em;
@@ -196,33 +156,26 @@ span {
 		margin-top: 0;
 		margin-bottom: 0.5em;
 	}
-	a {color: white;}
-	h2 {color: white;}
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
+	button {
+		border: none;
+		display: inline-block;
+		text-align: center;
+		cursor: pointer;
 
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
+	}
+	button:hover {
+		background-color: #1678e8;
+		color: white;
+	}
 }
 
-.hero-text button {
-  border: none;
-  /*outline: 0;*/
-  display: inline-block;
-  /*padding: 10px 25px;*/
-  /*color: black;*/
-  /*background-color: #ddd;*/
-  text-align: center;
-  cursor: pointer;
-	
-}
 
-.hero-text button:hover {
-  background-color: #555;
-  color: white;
-}
 //-----------------------------------------------------
 // Section about 
 //-----------------------------------------------------
@@ -282,7 +235,6 @@ span {
         width: 100%;
     }
 }
-
 // footer
 .footer {
 	padding:1em;
@@ -301,18 +253,33 @@ span {
 	}
     
 }
+//-----------------------------------------------------
+//  Two panels
+//-----------------------------------------------------
 
-//////////////////////////
-/* Container holding the image and the text */
+/* Create two equal columns that floats next to each other */
+.column {
+	float: left;
+	width: 50%;
+	padding: 10px;
+	height: 300px; /* Should be removed. Only for demonstration */
+	overflow:hidden;
+	p {
+		font-size: 1.3em;
+		line-height: 1.8em;
+	}
+}
 
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
 
-
-.hero-section {
-  background: url('../images/tools.jpg') 50% no-repeat;
-  background-size: cover;
-  height: 60vh;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+    .column {
+        width: 100%;
+    }
 }
