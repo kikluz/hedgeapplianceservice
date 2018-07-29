@@ -31,7 +31,7 @@ a {
   }
 
   &:focus {
-    outline: $focus-outline;
+    // outline: $focus-outline; comment to remove outline on click
     outline-offset: $focus-outline-offset;
   }
 }
