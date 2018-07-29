@@ -86,41 +86,41 @@ p {
 //-----------------------------------------------------
 // hero unit exmaple https://codetheweb.blog/2017/12/07/fullscreen-image-hero/
 //-----------------------------------------------------
-.hero {
-	/* Sizing */
-	width: 100vw;
-	height: 100vh;
+// .hero {
+// 	/* Sizing */
+// 	width: 100vw;
+// 	height: 100vh;
 
-	/* Flexbox stuff */
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	/* Text styles */
-	text-align: center;
-	h1 {
-		@include for-desktop-up {
-			font-size: 5em;
-		}
-		/* Text styles */
-		font-family: Merriweather,serif;
-		font-weight: 400;
-		color: white; /* ADD THIS LINE */
-		font-size: 2em;
-		/* Margins */
-		margin-top: 0;
-		margin-bottom: 0.5em;
-	}
-	a {color: white;}
-	h2 {color: white;}
-	/* Background styles */
-	// background: url('../images/tools.jpg') 50% no-repeat;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(../images/fresh.jpg);
-	background-size: cover;
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	width: 100%;
-}
+// 	/* Flexbox stuff */
+// 	display: flex;
+// 	justify-content: center;
+// 	align-items: center;
+// 	/* Text styles */
+// 	text-align: center;
+// 	h1 {
+// 		@include for-desktop-up {
+// 			font-size: 5em;
+// 		}
+// 		/* Text styles */
+// 		font-family: Merriweather,serif;
+// 		font-weight: 400;
+// 		color: white; /* ADD THIS LINE */
+// 		font-size: 2em;
+// 		/* Margins */
+// 		margin-top: 0;
+// 		margin-bottom: 0.5em;
+// 	}
+// 	a {color: white;}
+// 	h2 {color: white;}
+// 	/* Background styles */
+// 	// background: url('../images/tools.jpg') 50% no-repeat;
+//     background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(../images/fresh.jpg);
+// 	background-size: cover;
+// 	background-position: center center;
+// 	background-repeat: no-repeat;
+// 	background-attachment: fixed;
+// 	width: 100%;
+// }
 
 .hero .btn {
 	/* Positioning and sizing */
@@ -183,6 +183,22 @@ span {
 }
 
 .hero-text {
+	h1 {
+		@include for-desktop-up {
+			font-size: 5em;
+		}
+		/* Text styles */
+		font-family: Merriweather,serif;
+		font-weight: 400;
+		color: white; /* ADD THIS LINE */
+		font-size: 2em;
+		/* Margins */
+		margin-top: 0;
+		margin-bottom: 0.5em;
+	}
+	a {color: white;}
+	h2 {color: white;}
+
   text-align: center;
   position: absolute;
   top: 50%;
@@ -200,7 +216,7 @@ span {
   /*background-color: #ddd;*/
   text-align: center;
   cursor: pointer;
-	width: 200px;
+	
 }
 
 .hero-text button:hover {
