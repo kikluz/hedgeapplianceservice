@@ -4,4 +4,5 @@
 //     $('ul').toggleClass('active')
 //   })
 // })
+//= require "_slidequotes"
 //= require "_nav"
