@@ -9,7 +9,7 @@
       <!-- jquery goes first to work properly -->
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <%= stylesheet_link_tag "site" %>
-  <%= javascript_include_tag "site" %>
+  
   <!-- Include Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
   <!-- <%= stylesheet_link_tag "//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" %> -->
@@ -21,6 +21,8 @@
       <%= partial "layouts/nav" %>
         <%= yield %>
       <%= partial "layouts/footer" %>
+      <!-- add first site js file to load the DOM before all js file  !important-->
+       <%= javascript_include_tag "site" %>
     </div>
   </body>
 </html>
