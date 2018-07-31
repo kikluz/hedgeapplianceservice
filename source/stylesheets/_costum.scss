@@ -145,7 +145,7 @@ span {
 	h2 {color: white;}
 	h1 {
 		@include for-desktop-up {
-			font-size: 5em;
+			font-size: 3em;
 		}
 		/* Text styles */
 		font-family: Merriweather,serif;
