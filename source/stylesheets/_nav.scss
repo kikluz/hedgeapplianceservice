@@ -22,6 +22,7 @@
 	@media (max-width: 700px) {
 		font-size: 2em;
 		padding-top: 6px;
+		   
 	}
 	float:    left;
 	display:  block;
@@ -29,16 +30,12 @@
 	padding-top: 20px;
 	img {
 		max-width: 4em;
+		vertical-align: middle;
 	}
 }
 .logo-words {
 @media (max-width: 700px) {display: none;}
 	display: inline-block;
-	-webkit-margin-before: 1em;
-	-webkit-margin-after: 1em;
-	-webkit-margin-start: 0px;
-	-webkit-margin-end: 0px;
-	-webkit-padding-start: 40px;
 }
 
 .nav-list {
