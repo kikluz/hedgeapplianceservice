@@ -1,28 +1,14 @@
-<!-- 
-<nav>
-	<div class="container">
-		<ul class="nav-items">
-			<li>
-				<a href="tel:7078097424"><i class="fa fa-phone-square fa-2x"></i> <span>707 809 7424</span></a>
-			</li>
-	</ul>
-</div>
-</nav> -->
-<!--  <nav>
-  <div class="toggle menu">&#9776;</div>
-  <ul>
-    <li><a href="#">About</a></li>
-    <li><a href="#">Contact</a></li>
-  </ul>
-</nav> -->
+
 
 <nav class="nav-bar">
   <div class="nav-hold">
 
-    <% link_to '/index.html', :relative => true, class: 'navbar-brand nav-logo' do %>
+    
       <!-- <i class="fab fa-phoenix-framework fa-2x"></i> -->
-      <strong>
-        Logo
+       <% link_to '/index.html', :relative => true, class: 'navbar-brand nav-logo' do %>
+          <%= image_tag 'h-logo.png' %>
+      <strong class="logo-words">
+        Hedge Appliance Service
       </strong>
     <% end %>
 

@@ -27,6 +27,18 @@
 	display:  block;
 	color: #dee0e2;
 	padding-top: 20px;
+	img {
+		max-width: 4em;
+	}
+}
+.logo-words {
+@media (max-width: 700px) {display: none;}
+	display: inline-block;
+	-webkit-margin-before: 1em;
+	-webkit-margin-after: 1em;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+	-webkit-padding-start: 40px;
 }
 
 .nav-list {
