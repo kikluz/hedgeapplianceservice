@@ -11,7 +11,7 @@
 
 .nav-bar {
 	width: 100%;
-	background: #287688;
+	background: #1073ae;
 }
 
 .nav-hold {
@@ -20,20 +20,32 @@
 
 .nav-logo {
 	@media (max-width: 700px) {
-		font-size: 2em;
+		// font-size: 2em;
 		padding-top: 6px;
-		   
 	}
+	height: 34px;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
 	float:    left;
 	display:  block;
 	color: #dee0e2;
-	padding-top: 20px;
+	padding-top: 8px;
 	img {
 		max-width: 4em;
+		// align image with slogan
 		vertical-align: middle;
 	}
 }
 .logo-words {
+	font-size: 1.5em;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-family: Merriweather,serif;
+    display: inline-block;
+    letter-spacing: 1px;
 @media (max-width: 700px) {display: none;}
 	display: inline-block;
 }

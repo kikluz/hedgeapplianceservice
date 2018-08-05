@@ -234,10 +234,25 @@ q {
 // footer
 .footer {
 	padding:1em;
-	background: lightskyblue;	
+	background: #1073ae;
+	img {
+		max-width: 4em;
+		display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+
+	}	
 }
 .footer-info {
-	float: right;
+	text-align: center;
+	a {color: white;} 
+}
+
+
+
+.logo-footer:hover {
+	// opacity: 0.7;
 }
 //-----------------------------------------------------
 //  About page 
