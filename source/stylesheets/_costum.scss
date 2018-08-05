@@ -247,13 +247,11 @@ q {
 .footer-info {
 	text-align: center;
 	a {color: white;} 
+	a:hover {
+		color: #f7703e;
+	}
 }
 
-
-
-.logo-footer:hover {
-	// opacity: 0.7;
-}
 //-----------------------------------------------------
 //  About page 
 //-----------------------------------------------------

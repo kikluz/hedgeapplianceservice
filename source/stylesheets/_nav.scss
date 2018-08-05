@@ -7,11 +7,15 @@
 	width: 95%;
 	max-width: 1000px;
 	margin: 0 auto;
+	a:hover {
+		color: #f7703e;
+	}
 }
 
 .nav-bar {
 	width: 100%;
-	background: #1073ae;
+	background-color: rgb(7, 56, 99);
+    transition: background-color 0.5s ease 0s;
 }
 
 .nav-hold {
@@ -46,6 +50,7 @@
     font-family: Merriweather,serif;
     display: inline-block;
     letter-spacing: 1px;
+
 @media (max-width: 700px) {display: none;}
 	display: inline-block;
 }
