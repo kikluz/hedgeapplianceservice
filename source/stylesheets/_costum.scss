@@ -234,7 +234,7 @@ q {
 // footer
 .footer {
 	padding:1em;
-	background: #1073ae;
+	background-color: #073863;
 	img {
 		max-width: 4em;
 		display: block;
@@ -246,9 +246,9 @@ q {
 }
 .footer-info {
 	text-align: center;
-	a {color: white;} 
+	a {color: #f7703e;} 
 	a:hover {
-		color: #f7703e;
+		color: white;
 	}
 }
 
