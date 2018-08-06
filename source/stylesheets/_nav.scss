@@ -8,7 +8,7 @@
 	max-width: 1000px;
 	margin: 0 auto;
 	a:hover {
-		color: #f7703e;
+		color: white;
 	}
 }
 
@@ -35,7 +35,7 @@
     background-repeat: no-repeat;
 	float:    left;
 	display:  block;
-	color: #dee0e2;
+	color: #f7703e;
 	padding-top: 8px;
 	img {
 		max-width: 4em;
@@ -51,7 +51,9 @@
     display: inline-block;
     letter-spacing: 1px;
 
-@media (max-width: 700px) {display: none;}
+@media (max-width: 700px) {
+	font-size: 15px;
+}
 	display: inline-block;
 }
 
@@ -66,7 +68,7 @@
 .nav-list li a {
 	display:  block;
 	padding:  20px 10px;
-	color:    #dee0e2;
+	color:    #f7703e;
 }
 
 .nav-menu {
