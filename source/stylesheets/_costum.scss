@@ -279,7 +279,7 @@ q {
 	height: 300px; /* Should be removed. Only for demonstration */
 	overflow:hidden;
 	p {
-		font-size: 1.3em;
+		font-size: 1.1em;
 		line-height: 1.8em;
 	}
 }
@@ -295,6 +295,7 @@ q {
 @media screen and (max-width: 800px) {
 	.col_about {
 		width: 100%;
+		padding-top:20px;
 	}
 }
 
