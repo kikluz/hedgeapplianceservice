@@ -326,12 +326,28 @@ q {
 .left-half {
 	float: left;
 	width: 50%;
-  @media screen and (max-width: 800px) {
-  float: none;
-}
+	padding-right: 2em;
+	@media screen and (max-width: 800px) {
+		float: none;
+	}
 }
 .right-half {
   
   float: left;
   width: 50%;
+}
+
+table, td, th {
+    border: 1px solid #ddd;
+        padding: 10px;
+        // color: #333;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th {
+    height: 50px;
 }
