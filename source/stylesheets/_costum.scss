@@ -329,10 +329,16 @@ q {
 	padding-right: 2em;
 	@media screen and (max-width: 800px) {
 		float: none;
+		width: auto;
+		// text-align: center;
 	}
 }
 .right-half {
-  
+	@media screen and (max-width: 800px) {
+		float: none;
+		width: auto;
+		// text-align: center;
+	}
   float: left;
   width: 50%;
 }
